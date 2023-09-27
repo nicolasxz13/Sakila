@@ -1,0 +1,1 @@
+SELECT actor.actor_id, actor.first_name, film.film_id, film.title,film.description, film.release_year from actor inner join film_actor on film_actor.actor_id = actor.actor_id inner join film on film.film_id = film_actor.film_id WHERE actor.actor_id = 5

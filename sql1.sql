@@ -1,0 +1,1 @@
+SELECT city.city_id, city.city, customer.first_name, customer.last_name, customer.email, customer.email from customer inner join address on address.address_id = customer.address_id inner join city on city.city_id = address.city_id WHERE city.city_id = 312
